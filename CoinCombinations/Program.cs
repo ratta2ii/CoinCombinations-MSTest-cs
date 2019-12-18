@@ -1,6 +1,4 @@
 using System;
-//using System.Collections.Generic;
-
 
 namespace CoinCombinations.Models
 {
@@ -8,14 +6,11 @@ namespace CoinCombinations.Models
     {
         static void Main()
         {
-            
             int userInput = isNumberEntry();
-
 
             Coin newCoin = new Coin(userInput);
             newCoin.CountCoins();
-            Console.WriteLine(newCoin.DisplayResults());
-
+            Console.WriteLine($"Quarters: {newCoin.Quarter} Dimes: {newCoin.Dime} Nickles: {newCoin.Nickle} Pennies: {newCoin.Penny}");
         }
 
         public static int isNumberEntry()

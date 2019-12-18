@@ -1,6 +1,3 @@
-using System;
-using System.Collections.Generic;
-
 namespace CoinCombinations.Models 
 {
     public class Coin
@@ -19,9 +16,6 @@ namespace CoinCombinations.Models
             Dime = 0;
             Quarter = 0;
         }
-
-        
-
         public void CountCoins()
         {
           if (Amount >= 25)
@@ -47,12 +41,5 @@ namespace CoinCombinations.Models
              Penny += Amount;
           }
         }
-
-        public string DisplayResults()
-        {
-            return $"Quarters: {Quarter} Dimes: {Dime} Nickles: {Nickle} Pennies: {Penny}"; 
-        }
-
-
     }
 }

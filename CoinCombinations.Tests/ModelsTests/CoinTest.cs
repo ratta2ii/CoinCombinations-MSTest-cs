@@ -1,7 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using CoinCombinations.Models;
-// using System; // Add this if you want to use Console.WriteLine() in test method.
-// using System.Collections.Generic;
 
 namespace CoinCombinations.Tests
 {
@@ -15,14 +13,12 @@ namespace CoinCombinations.Tests
             Assert.AreEqual(typeof(Coin), coinTest.GetType());
         }
 
-
         [TestMethod]
         public void CoinConstructor_SetPropertyTypeCoin_99()
         {
             Coin coinTest2 = new Coin(99);
             Assert.AreEqual(99, coinTest2.Amount);
         }
-
 
         [TestMethod]
         public void CountCoins_IncrementQuarterCounter_1()
@@ -32,7 +28,6 @@ namespace CoinCombinations.Tests
             Assert.AreEqual(1, coinTest3.Quarter);
         }
 
-
         [TestMethod]
         public void CountCoins_IncrementDimeCounter_2()
         {
@@ -40,7 +35,6 @@ namespace CoinCombinations.Tests
             coinTest4.CountCoins();
             Assert.AreEqual(2, coinTest4.Dime);
         }
-
 
         [TestMethod]
         public void CountCoins_IncrementNickleCounter_1()
@@ -57,15 +51,6 @@ namespace CoinCombinations.Tests
             Coin coinTest6 = new Coin(4);
             coinTest6.CountCoins();
             Assert.AreEqual(4, coinTest6.Penny);
-        }
-
-
-         [TestMethod]
-        public void DisplayResults_ReturnAllCounters_String()
-        {
-            Coin coinTest7 = new Coin(99);
-            coinTest7.CountCoins();
-            Assert.AreEqual("Quarters: 3 Dimes: 2 Nickles: 0 Pennies: 4", coinTest7.DisplayResults());
         }
     }
 }
