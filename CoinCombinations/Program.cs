@@ -10,7 +10,7 @@ namespace CoinCombinations.Models
 
             Coin newCoin = new Coin(userInput);
             newCoin.CountCoins();
-            Console.WriteLine($"Quarters: {newCoin.Quarter} Dimes: {newCoin.Dime} Nickles: {newCoin.Nickle} Pennies: {newCoin.Penny}");
+            Console.WriteLine($"Quarters: {newCoin.Quarter} Dimes: {newCoin.Dime} Nickels: {newCoin.Nickel} Pennies: {newCoin.Penny}");
         }
 
         public static int isNumberEntry()

@@ -4,7 +4,7 @@ namespace CoinCombinations.Models
     {
         public int Amount { get; set; }
         public int Penny { get; set; }
-        public int Nickle { get; set; }
+        public int Nickel { get; set; }
         public int Dime { get; set; }
         public int Quarter { get; set; }
 
@@ -12,7 +12,7 @@ namespace CoinCombinations.Models
         {
             Amount = amount;
             Penny = 0;
-            Nickle = 0;
+            Nickel = 0;
             Dime = 0;
             Quarter = 0;
         }
@@ -33,7 +33,7 @@ namespace CoinCombinations.Models
           else if (Amount >= 5)
           {
               Amount -= 5;
-              Nickle++;
+              Nickel++;
               CountCoins();
           }
           else 

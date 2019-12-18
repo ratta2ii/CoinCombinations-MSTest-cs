@@ -37,11 +37,11 @@ namespace CoinCombinations.Tests
         }
 
         [TestMethod]
-        public void CountCoins_IncrementNickleCounter_1()
+        public void CountCoins_IncrementNickelCounter_1()
         {
             Coin coinTest5 = new Coin(5);
             coinTest5.CountCoins();
-            Assert.AreEqual(1, coinTest5.Nickle);
+            Assert.AreEqual(1, coinTest5.Nickel);
         }
 
 
