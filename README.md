@@ -23,7 +23,7 @@ Build a console app that lets users enter an amount of cents and shows the small
 
 1. Clone this repo:
 ```
-$ git clone https://github.com/misakimichy/CoinCombination.Solution.git
+$ git clone https://github.com/ratta2ii/CoinCombinations-MSTest-cs.git
 ```
 
 2. Go into the repo and run this application:
@@ -35,7 +35,7 @@ $ dotnet run
 * No known bugs at this time.
 
 ## Support and contact details
- misaki.koonce@gmail.com
+ misaki.tismeTRM@gmail.com
 
 ## Technologies Used
 _Git, GitHub, C# and .NET Core
